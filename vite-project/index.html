@@ -7,12 +7,29 @@
     <link rel="stylesheet" href="./styles/style.css" />
     <title>API</title>
   </head>
-  <body>
     <section class="top">
       <div class="header"> 
         <span class="title"> Genshin Wiki 2.0 </span>
       </div>
     </section>
+    <section class="nav-bar">
+      <a href="index.html"><img class="logo" src="img/logo.png" alt="Genshin"></img></a>
+      <div class="btn">
+        <a class="home-btn" href="index.html">Home</a>
+        <a class="character-btn" href="#characters">Characters</a>
+        <form id="form" role="search">
+          <input type="search" id="query" name="q"
+           placeholder="Search...">
+          <button type="submit"><img src="img/icon.png"></button>
+        </form>
+      </div>
+    </section>
+    <section class="about"> 
+      <div class="aboutgen">
+        <h1> What is Genshin? </h1>
+        <p> Genshin Impact is an open-world, action role-playing game that allows the player to control one of four interchangeable characters in a party. Switching between characters can be done quickly during combat, allowing the player to use several different combinations of skills and attacks. </p>
+      </div>
+
     <div id="app"></div>
     <script type="module" src="./js/main.js"></script>
   </body>
