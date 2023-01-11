@@ -1,21 +1,17 @@
-#form {
-  width: 100px;
-  padding: 5%;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
-  top:0;
-  right:0;
+@import url(_header.css);
+@import url(_searchbar.css);
+@import url(_navbar.css);
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Roboto', sans-serif;
 }
 
-::placeholder {
-    color: #cac7ff;
-    opacity: 0.7; 
-  }
-
-#form button img{
-    width:25px;
-}
-
+$phone: 580px;
+$tablet: 900px;
+$laptop: 1200px;
