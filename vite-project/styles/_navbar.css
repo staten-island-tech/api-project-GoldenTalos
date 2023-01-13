@@ -6,9 +6,12 @@
     align-items: center;
     position: sticky;
     top:0;
-    z-index: 1;
   }
-  
+
+.home-btn {
+    margin-right: 40rem;
+}
+
 .btn {
     display: flex;
     flex-direction: row;
