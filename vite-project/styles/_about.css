@@ -1,0 +1,23 @@
+.about-genshin {
+    width: 55%;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 6rem;
+    margin-left: 32rem;
+    background: #afd89e;
+  border: 15px solid #60944c;
+  width: 50%;
+  font-weight: bold;
+  box-shadow: 6px 12px 10px rgba(71, 69, 69, 0.623);
+  font-family: "Alkalami", serif;
+  margin-bottom: 40px;
+  border-radius:20px;
+  }
+
+.about-header {
+    font-size: 3rem;
+  }
+  
+.about-paragraph {
+    font-size: 2rem;
+  }

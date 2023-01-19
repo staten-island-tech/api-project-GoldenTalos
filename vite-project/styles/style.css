@@ -1,6 +1,7 @@
 @import url(_header.css);
 @import url(_searchbar.css);
 @import url(_navbar.css);
+@import url(_about.css);
 
 html,
 body{

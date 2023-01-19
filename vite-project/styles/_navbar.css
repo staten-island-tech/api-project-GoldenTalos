@@ -4,7 +4,6 @@
     height: 8vh;
     display: flex;
     flex-direction: row;
-
     align-items: center;
     position: sticky;
     top:0;
@@ -12,17 +11,40 @@
 
 
 .btn {
-    display: flex;
-    flex-direction: row;
-    margin-right: 4rem;
-    font-weight: 400;
-    font-size: 2rem;
-    justify-content: space-evenly;
-    width: 40vw;
-    text-decoration: none;
+    margin-top: 30px;
+    margin-right: 2rem;
+    width: 120px;
     color: black;
+    font-size: 20px;
+    background: #afd89e;
+    border: 3px solid #60944c;
+    border-radius: 5px;
+    padding: 4px;
+    text-decoration: none;
+    box-shadow: 3px 3px 3px rgba(71, 69, 69, 0.623);
+    transition-duration: 1s;
   }
- 
+
+.btn:active {
+  transform: translateY(6px);
+}
+
+a:link {
+  text-decoration: none ;
+}
+
+a:visited {
+  text-decoration: none ;
+}
+
+a:hover {
+  text-decoration: none ;
+}
+
+a:active {
+  text-decoration: none ;
+}
+
   .logo {
     margin-left: -34rem;
     margin-top: 1.5rem;
