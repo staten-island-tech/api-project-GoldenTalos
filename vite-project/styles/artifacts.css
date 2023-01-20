@@ -1,3 +1,4 @@
+@import url(_navbar2.css);
 @import url(_navbar.css);
 @import url(_header.css);
 
@@ -11,10 +12,10 @@ body{
     background-color: #d4e4d4;
 }
 
-.title2 {
+.title3 {
     margin-top: 100px;
     font-size: 4rem;
-    margin-left: 52rem;
+    margin-left: 53rem;
     text-align: center;
     background-color: #629e4b;
     width: 320px;

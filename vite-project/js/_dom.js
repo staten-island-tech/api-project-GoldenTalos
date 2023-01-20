@@ -19,5 +19,14 @@ const DOMSelectors = {
   inazuma: document.getElementById("inazuma"),
   sumeru: document.getElementById("sumeru"),
   text: document.querySelector("text"),
+  onestar: document.getElementById("1-star"),
+  twostar: document.getElementById("2-star"),
+  threestar: document.getElementById("3-star"),
+  fourstar: document.getElementById("4-star"),
+  fivestar: document.getElementById("5-star"),
+  character: document.getElementById("character"),
+  region: document.getElementById("regions"),
+  weapon: document.getElementById("weapons"),
+  artifact: document.getElementById("artifact"),
 };
 export { DOMSelectors };
