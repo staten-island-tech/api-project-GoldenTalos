@@ -1,1 +1,14 @@
 @import url(_navbar2.css);
+@import url(_navbar.css);
+@import url(_header.css);
+@import url(_characters-img.css);
+
+html,
+body{
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    background-color: #d4e4d4;
+}

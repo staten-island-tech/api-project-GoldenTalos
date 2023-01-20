@@ -7,33 +7,78 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet"> 
     <title>Characters</title>
-    <link rel="stylesheet" href="../characters/style.css" />
+    <link rel="stylesheet" href="../styles/characters.css" />
 </head>
 <body>
-    <h1 class="main">Characters</h1>
+  <section class="top">
+    <div class="header"> 
+      <span id="title"> Genshin Wiki 2.0 </span>
+    </div>
+  </section>
+  <section class="nav-bar">
+    <a href="index.html"><img class="logo" src="img/logo.png" alt="Genshin Logo"></img></a>
+    <div class="button">
+      <a class="link" href="index.html">
+        <button class="btn home-btn">Home</button>
+      </a>
+      <a class="link" href="character.html">
+        <button class="btn character-btn">Characters</button>
+      </a>
+      <a class="link" href="artifacts.html">
+      <button class="btn artifact-btn">Artifacts</button>
+    </a>
+      <a class="link" href="weapons.html">
+        <button class="btn weapon-btn">Weapons</button>
+    </a>
+      <a class="link" href="regions.html">
+        <button class="btn region-btn">Regions</button>
+    </a> 
+  </div>
+</section>
+    <h1 class="title2">Characters</h1>
     <div class="header">
       <div class="options">
         <button class="opt-btn" id="all"> All</button>
-        <button class="opt-btn" id="female"> Female </button>
-        <button class="opt-btn" id="male"> Male </button>
-        <button class="opt-btn" id="pyro"> Pyro </button>
-        <button class="opt-btn" id="hydro"> Hydro </button>
-        <button class="opt-btn" id="anemo"> Anemo </button>
-        <button class="opt-btn" id="electro"> Electro </button>
-        <button class="opt-btn" id="dendro"> Dendro </button>
-        <button class="opt-btn" id="Geo"> Geo </button>
-        <button class="opt-btn" id="bow"> Bows </button>
-        <button class="opt-btn" id="catalyst"> Catalysts </button>
-        <button class="opt-btn" id="claymore"> Claymores </button>
-        <button class="opt-btn" id="polearm"> Polearms </button>
-        <button class="opt-btn" id="sword"> Swords </button>
-        <button class="opt-btn" id="mondstadt"> Mondstadt </button>
-        <button class="opt-btn" id="liyue"> Liyue </button>
-        <button class="opt-btn" id="inazuma"> Inazuma </button>
-        <button class="opt-btn" id="sumeru"> Sumeru </button>
+        <div class="hidden">
+        <button class="opt-btn" id="gender"> Gender </button>
+          <div class="hidden-buttons">
+          <button class="opt-btn" id="female"> Female </button>
+          <button class="opt-btn" id="male"> Male </button>
+          </div>
+        </div>
+        <div class="hidden">
+          <button class="opt-btn" id="vision"> Vision </button>
+            <div class="hidden-buttons">
+            <button class="opt-btn" id="pyro"> Pyro </button>
+            <button class="opt-btn" id="hydro"> Hydro </button>
+            <button class="opt-btn" id="anemo"> Anemo </button>
+            <button class="opt-btn" id="electro"> Electro </button>
+            <button class="opt-btn" id="dendro"> Dendro </button>
+            <button class="opt-btn" id="Geo"> Geo </button>
+            </div>
+            </div>
+        <div class="hidden">
+          <button class="opt-btn" id="weapon"> Weapon </button>
+            <div class="hidden-buttons">
+            <button class="opt-btn" id="bow"> Bows </button>
+            <button class="opt-btn" id="catalyst"> Catalysts </button>
+            <button class="opt-btn" id="claymore"> Claymores </button>
+            <button class="opt-btn" id="polearm"> Polearms </button>
+            <button class="opt-btn" id="sword"> Swords </button>
+            </div>
+            </div>
+        <div class="hidden hidden1">
+          <button class="opt-btn" id="region"> Regions </button>
+            <div class="hidden-buttons">
+            <button class="opt-btn" id="mondstadt"> Mondstadt </button>
+            <button class="opt-btn" id="liyue"> Liyue </button>
+            <button class="opt-btn" id="inazuma"> Inazuma </button>
+            <button class="opt-btn" id="sumeru"> Sumeru </button>
+            </div>
+            </div>
       </div>
     </div>
-    <div class="menu-item" id="menu-item"></div> 
+    <div id="app2"></div> 
     <script type="module" src="./js/characters.js"></script>
 </body>
 </html>

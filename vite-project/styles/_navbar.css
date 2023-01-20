@@ -1,6 +1,6 @@
 .nav-bar {
     margin-top: 1px;
-    margin-left: 40rem;
+    margin-left: 34rem;
     height: 8vh;
     display: flex;
     flex-direction: row;
@@ -13,9 +13,9 @@
 .btn {
     margin-top: 30px;
     margin-right: 2rem;
-    width: 120px;
+    width: 160px;
     color: black;
-    font-size: 20px;
+    font-size: 30px;
     background: #afd89e;
     border: 3px solid #60944c;
     border-radius: 5px;

@@ -1,3 +1,8 @@
+.options {
+  margin-left: 10rem;
+  margin-top: 25px;
+}
+
 .opt-btn {
     margin-top: 30px;
     margin-right: 2rem;
@@ -17,3 +22,21 @@
   transform: translateY(6px);
 }
 
+.hidden{
+  -webkit-transition: width 5s;
+    transition: width 5s;
+  width: fit-content;
+  margin-bottom: 20px;
+}
+
+.hidden-buttons{
+  display:none;
+}
+
+.hidden:hover .hidden-buttons{
+  display:inline-block;
+}
+
+.hidden1 {
+  margin-bottom: 50px;
+}
