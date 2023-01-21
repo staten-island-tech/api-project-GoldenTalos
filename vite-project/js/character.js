@@ -10,12 +10,19 @@ const query = async function () {
     const data = await response.json();
     function displayCharacters() {
       data.forEach((ppl) => {
-        let test = ppl.name;
-        let test2 = imgUrl1 + test + imgUrl2;
+        let lowercase = ppl.name.toLowerCase();
+        lowercase = lowercase.replace(
+          /kamisato|kaedehara|sangonomiya|shogun|kujou/,
+          ""
+        );
+        let trimspace = lowercase.trim();
+        trimspace = trimspace.replace(" ", "-");
+        let actual = imgUrl1 + trimspace + imgUrl2;
+        console.log(actual);
         DOMSelectors.character.insertAdjacentHTML(
           "beforeend",
           `<div class="character-card">
-          <img src= ${test2} alt="Character Icon">               
+          <img src= ${actual} alt="Character Icon">               
                     <h3 class= "character-name">${ppl.name}</h3>
                     <p class="character-weapon">${ppl.weapon}</p>
                     <p class="character-vision">${ppl.vision}</p>
