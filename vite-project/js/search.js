@@ -49,12 +49,12 @@ const listen = function () {
             let actual = imgUrl1 + trimspace + imgUrl2;
             DOMSelectors.character.insertAdjacentHTML(
               "beforeend",
-              `<div class="character-card">
+              `<div class="search-character">
               <img src= ${actual} alt="Character Icon">               
-              <h3 class= "character-name">${ppl.name}</h3>
-              <p class="character-weapon">${ppl.weapon}</p>
-                    <p class="character-vision">${ppl.vision}</p>
-                    <p class="character-nation">${ppl.nation}</p>
+              <h3 class= "search-name">${ppl.name}</h3>
+              <p class="search-nation">${ppl.nation}</p>
+              <p class="search-vision">${ppl.vision}</p>
+              <p class="search-weapon">${ppl.weapon}</p>
                 </div>`
             );
           });
