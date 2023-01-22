@@ -28,5 +28,12 @@ const DOMSelectors = {
   region: document.getElementById("regions"),
   weapon: document.getElementById("weapons"),
   artifact: document.getElementById("artifact"),
+  searchForm: document.querySelector(".search-form"),
+  searchInput: document.querySelector(".search-bar"),
+  searchResults: document.querySelector(".searched-info"),
+  empty: document.querySelector(".empty"),
+  notFound: document.querySelector(".not-found"),
+  error: document.querySelector(".errors"),
+  result: document.querySelector(".results"),
 };
 export { DOMSelectors };

@@ -24,5 +24,19 @@
     width: fit-content;
     color: black;
     
-  }
+}
+
+#titles {
+  margin-left: 800px;
+  margin-top: 6.5rem;
+  font-size: 100px;
+  background: none;
+  background-color: #f0f8ff94;
+  width: fit-content;
+  color: black;
+  
+}
+
+
+
 
