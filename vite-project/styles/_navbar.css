@@ -1,6 +1,6 @@
 .nav-bar {
     margin-top: 1px;
-    margin-left: 28rem;
+    margin-left: 43rem;
     height: 8vh;
     display: flex;
     flex-direction: row;
@@ -46,7 +46,7 @@ a:active {
 }
 
 .logo {
-    margin-left: -27rem;
+    margin-left: -38rem;
     margin-top: 2.5rem;
     height: 9.5vh; 
 }
