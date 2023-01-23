@@ -16,6 +16,7 @@ body{
 .search-div {
     width: 100%;
     flex-direction: column;
+    margin-top: 60px;
 }
   
 .search-text {

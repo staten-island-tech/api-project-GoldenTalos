@@ -1,4 +1,5 @@
 import { DOMSelectors } from "./_dom";
+import "../styles/characters.css";
 
 const URL = "https://api.genshin.dev/characters/all";
 const imgUrl1 = "https://api.genshin.dev/characters/";
