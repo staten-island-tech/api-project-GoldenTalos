@@ -15,6 +15,11 @@ const query = async function () {
           /kamisato|kaedehara|sangonomiya|shogun|kujou/,
           ""
         );
+        function traveler() {
+          if (ppl.name == "Traveler") {
+            let lower = lowercase + "-" + ppl.vision;
+          }
+        }
         let trimspace = lowercase.trim();
         trimspace = trimspace.replace(" ", "-");
         let actual = imgUrl1 + trimspace + imgUrl2;
