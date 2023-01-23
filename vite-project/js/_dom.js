@@ -24,7 +24,7 @@ const DOMSelectors = {
   threestar: document.getElementById("3-star"),
   fourstar: document.getElementById("4-star"),
   fivestar: document.getElementById("5-star"),
-  character: document.getElementById("character"),
+  character: document.getElementById("character-item"),
   region: document.getElementById("regions"),
   weapon: document.getElementById("weapons"),
   artifact: document.getElementById("artifact"),

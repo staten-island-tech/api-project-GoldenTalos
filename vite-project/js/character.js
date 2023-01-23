@@ -28,11 +28,11 @@ const query = async function () {
         DOMSelectors.character.insertAdjacentHTML(
           "beforeend",
           `<div class="character-card">
-          <img src= ${actual} alt="Character Icon">               
-                    <h3 class= "character-name">${ppl.name}</h3>
-                    <p class="character-weapon">${ppl.weapon}</p>
+              <img class="character-img" src= ${actual} alt="Character Icon">               
+                    <h3 class="character-name">${ppl.name}</h3>
                     <p class="character-vision">${ppl.vision}</p>
-                    <p class="character-nation">${ppl.nation}</p>
+                    <p class="character-weapon">${ppl.weapon}</p>
+                    <p class="character-nation">Nation: ${ppl.nation}</p>
                 </div>`
         );
       });

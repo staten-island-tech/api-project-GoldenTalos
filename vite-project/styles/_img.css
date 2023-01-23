@@ -1,0 +1,52 @@
+.character-card {
+    margin-top: 40px;
+    text-align: center;
+    border: 3px solid black;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin-left: 40px;
+    margin-right: 40px;
+    width: 30%;
+    height: 90%;
+}
+
+.character-img {
+    margin: 0 auto;
+    text-align: center;
+    width:430px;
+    height:750px;
+}
+
+.character-item {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 98.5vw;
+    justify-content: space-around;
+    align-content: space-around;
+}
+  
+.character-name {
+  font-weight: 700;
+  text-align: center;
+  margin: 1rem;
+}
+  
+.character-vision {
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem;
+}
+  
+.character-nation {
+  font-weight: 500;
+  text-align: center;
+  margin: 1rem;
+}
+  
+.character-weapon {
+  font-weight: 400;
+  text-align: center;
+  margin: 1rem;
+}
