@@ -1,6 +1,6 @@
 .nav-bar {
     margin-top: 1px;
-    margin-left: 43rem;
+    margin-left: 40rem;
     height: 8vh;
     display: flex;
     flex-direction: row;
@@ -56,7 +56,7 @@ a:active {
   margin-top: 25px;
 }
 
-.opt-btn {
+/* .opt-btn {
     margin-top: 30px;
     margin-right: 2rem;
     width: 120px;
@@ -98,4 +98,4 @@ a:active {
 
 .hidden1 {
   margin-bottom: 50px;
-}
+} */

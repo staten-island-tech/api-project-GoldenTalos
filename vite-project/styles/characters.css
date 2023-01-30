@@ -14,10 +14,41 @@ body{
 .title2 {
     margin-top: 100px;
     font-size: 4rem;
-    margin-left: 52rem;
+    margin-left: 46rem;
     text-align: center;
-    background-color: #629e4b;
+    background-color: #3d7627;
     width: 320px;
     color: rgb(244, 240, 240);
     text-decoration: underline;
 }
+
+.page-btns {
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: center;
+  }
+  
+  .page-nav {
+    width: 17%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 2.5rem 0 3rem 0;
+    margin-right: 12.5%; 
+  }
+  
+  .previous-btn,
+  .next-btn {
+    font-size: 2rem;
+    @include default-btns;
+    height: 3.5rem;
+    width: 10rem;
+    padding: 5px 1rem;
+    background-color: $primary-color;
+    color: rgb(41, 17, 17);
+  }
+  
+  .previous-btn,
+  .next-btn:hover {
+    cursor: pointer;
+  }
