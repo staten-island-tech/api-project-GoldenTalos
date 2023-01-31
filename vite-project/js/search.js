@@ -6,16 +6,16 @@ const imgUrl2 = "/card";
 
 async function data(URL) {
   try {
-    const getcharacter = await fetch(URL);
+    const getCharacter = await fetch(URL);
 
-    if (getcharacter.status <= 199 || getcharacter.status >= 300) {
-      throw new Error(getcharacter);
+    if (getCharacter.status <= 199 || getCharacter.status >= 300) {
+      throw new Error(getCharacter);
     } else {
     }
   } catch (error) {
     console.log(error);
     console.log("error occur");
-    console.log(getcharacter.status);
+    console.log(getCharacter.status);
   }
 }
 
@@ -37,12 +37,12 @@ const card = {
     let Input = DOMSelectors.searchInput.value;
     const UserInput =
       Input.toLowerCase() +
+      Input.replace(/kamisato|kaedehara|sangonomiya|shogun|kujou/, "") +
       Input.trim() +
-      Input.replace(" ", "-") +
-      Input.replace(/kamisato|kaedehara|sangonomiya|shogun|kujou/, "");
+      Input.replace(" ", "-");
     console.log(UserInput);
 
-    response.data
+    data
       .filter((ppl) => ppl.name == `${UserInput}`)
       .forEach((ppl) => {
         let lowercase = ppl.name.toLowerCase();
