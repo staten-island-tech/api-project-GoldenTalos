@@ -96,3 +96,45 @@ a:active {
 }
 
 
+@media screen and (max-width: 600px) {
+  .character {
+    flex-direction: column;
+  }
+  .character-card {
+    width: 100%;
+  }
+  #title {
+    font-size: 50px;
+    margin-left: 45px;
+  }
+  .top {
+    height: 300px;
+  }
+  .header {
+    background-size: 428px 300px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .character {
+    flex-direction: column;
+  }
+  .character-card {
+    width: 100%;
+  }
+  #title {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .character {
+    flex-direction: column;
+  }
+  .character-card {
+    width: 100%;
+  }
+  #title {
+    font-size: 50px;
+    text-align: center;
+  }
+}
