@@ -97,15 +97,46 @@ a:active {
 
 
 @media screen and (max-width: 600px) {
+  .top {
+    width: 390px;
+    height: 300px;
+  }
   .character {
     flex-direction: column;
   }
   .character-card {
-    width: 100%;
+    margin-left: 35px;
+width: 340px;
+height: 660px;
+  }
+  .character-img {
+    width: 250px;
+    height:450px
+  }
+  .character-name {
+    font-size: 20px;
+  }
+  .character-vision {
+    font-size: 15px;
+  }
+  .character-nation {
+    font-size: 15px;
+  }   
+  .character-weapon {
+    font-size: 15px;
+  }
+  .remove {
+    margin-bottom: 15px;
+      width: 70px;
+      font-size: 15px;
+      padding: 5px;
+      text-decoration: none;
+      box-shadow: 3px 3px 3px rgba(71, 69, 69, 0.623);
+      transition-duration: 1s;
   }
   #title {
     font-size: 50px;
-    margin-left: 45px;
+    margin-left: 27px;
   }
   .top {
     height: 300px;
@@ -115,26 +146,48 @@ a:active {
   }
 }
 
-@media screen and (max-width: 900px) {
+@media screen and (max-width: 1200px) and (min-width: 900px) {
   .character {
     flex-direction: column;
   }
   .character-card {
-    width: 100%;
+    margin-left: 179px;
+width: 427px;
+height: 825px;
+  }
+  .character-img {
+    width: 324px;
+height: 554px;
+  }
+  .character-name {
+    font-size: 30px;
+  }
+  .character-vision {
+    font-size:25px;
+  }
+  .character-nation {
+    font-size: 25px;
+  }   
+  .character-weapon {
+    font-size: 25px;
+  }
+  .remove {
+    margin-bottom: 15px;
+      width: 90px;
+      font-size: 15px;
+      padding: 5px;
+      text-decoration: none;
+      box-shadow: 3px 3px 3px rgba(71, 69, 69, 0.623);
+      transition-duration: 1s;
   }
   #title {
-    font-size: 50px;
+    font-size: 65px;
+    margin-left: 201px;
   }
-}
-@media screen and (max-width: 1200px) {
-  .character {
-    flex-direction: column;
+  .top {
+    height: 300px;
   }
-  .character-card {
-    width: 100%;
-  }
-  #title {
-    font-size: 50px;
-    text-align: center;
+  .header {
+    background-size: 428px 300px;
   }
 }

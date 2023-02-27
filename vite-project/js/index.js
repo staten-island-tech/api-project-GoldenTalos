@@ -41,7 +41,7 @@ async function getData(character) {
     console.log(error);
     DOMSelectors.character.insertAdjacentHTML(
       "beforeend",
-      `<div class ="msg"> <p> Sorry, the character you're lookng for cannot be found.</p>
+      `<div class ="msg"> <p> Sorry, the character you're looking for cannot be found.</p>
      </div>`
     );
   }
