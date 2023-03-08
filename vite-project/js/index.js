@@ -3,6 +3,19 @@ import { DOMSelectors } from "./_dom";
 const imgUrl1 = "https://api.genshin.dev/characters/";
 const imgUrl2 = "/card";
 
+function say(name) {
+  const sayPromise = new Promise(function (resolve, reject) {
+    resolve(`bye ${name}`);
+  });
+  return sayPromise;
+}
+
+const cindy = say("cindy");
+console.log(cindy);
+cindy.then((value) => {
+  console.log(value);
+});
+
 DOMSelectors.form.addEventListener("submit", function (event) {
   event.preventDefault();
   getData(DOMSelectors.input.value);
