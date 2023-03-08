@@ -24,6 +24,8 @@ DOMSelectors.form.addEventListener("submit", function (event) {
 async function getData(character) {
   try {
     let URL = await fetch(`https://api.genshin.dev/characters/${character}`);
+    DOMSelectors.character.innerHTML = "";
+    DOMSelectors.input.innerHTML = "";
     if (URL.status < 200 || URL.status > 299) {
       throw error(URL);
     } else {
@@ -59,6 +61,41 @@ async function getData(character) {
     );
   }
 }
+
+const query = async function () {
+  try {
+    const response = await fetch(URL);
+    const data = await response.json();
+    function displayCharacters() {
+      data.forEach((ppl) => {
+        let lowercase = ppl.name.toLowerCase();
+        lowercase = lowercase.replace(
+          /kamisato|kaedehara|sangonomiya|shogun|kujou/,
+          ""
+        );
+        let trimspace = lowercase.trim();
+        trimspace = trimspace.replace(" ", "-");
+        let actual = imgUrl1 + trimspace + imgUrl2;
+        console.log(actual);
+        DOMSelectors.character.insertAdjacentHTML(
+          "beforeend",
+          `<div class="character-card">
+          <img src= ${actual} alt="Character Icon">               
+                    <h3 class= "character-name">${ppl.name}</h3>
+                    <p class="character-weapon">${ppl.weapon}</p>
+                    <p class="character-vision">${ppl.vision}</p>
+                    <p class="character-nation">${ppl.nation}</p>
+                </div>`
+        );
+      });
+    }
+    displayCharacters();
+  } catch (error) {
+    console.log(error);
+    alert("An error occured.");
+  }
+};
+query();
 
 function card() {
   let remove = document.querySelectorAll(".remove");
