@@ -5,7 +5,7 @@ const imgUrl2 = "/card";
 
 function say(name) {
   const sayPromise = new Promise(function (resolve, reject) {
-    resolve(`bye ${name}`);
+    resolve(`${name} bad`);
   });
   return sayPromise;
 }
