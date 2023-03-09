@@ -1,5 +1,6 @@
 import { DOMSelectors } from "./_dom";
 
+const URL = "https://api.genshin.dev/characters/all";
 const imgUrl1 = "https://api.genshin.dev/characters/";
 const imgUrl2 = "/card";
 
@@ -80,11 +81,11 @@ const query = async function () {
         DOMSelectors.character.insertAdjacentHTML(
           "beforeend",
           `<div class="character-card">
-          <img src= ${actual} alt="Character Icon">               
-                    <h3 class= "character-name">${ppl.name}</h3>
-                    <p class="character-weapon">${ppl.weapon}</p>
+              <img class="character-img" src= ${actual} alt="Character Icon">               
+                    <h3 class="character-name">${ppl.name}</h3>
                     <p class="character-vision">${ppl.vision}</p>
-                    <p class="character-nation">${ppl.nation}</p>
+                    <p class="character-weapon">Weapon: ${ppl.weapon}</p>
+                    <p class="character-nation">Nation: ${ppl.nation}</p>
                 </div>`
         );
       });
@@ -105,3 +106,8 @@ function card() {
     });
   });
 }
+
+document.getElementById("all").addEventListener("click", function () {
+  DOMSelectors.character.innerHTML = "";
+  query();
+});

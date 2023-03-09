@@ -46,18 +46,18 @@ a:active {
 
 
 .opt-btn {
-    margin-top: 30px;
-    margin-right: 2rem;
-    width: 110px;
-    color: black;
-    font-size: 20px;
-    background: #ffcc00;
-    border: 4px solid  #ffa705;
-    border-radius: 5px;
-    padding: 4px;
-    text-decoration: none;
-    box-shadow: 3px 3px 3px rgba(71, 69, 69, 0.623);
-    transition-duration: 1s;
+  margin-top: 29px;
+margin-left: 3rem;
+width: 122px;
+color: black;
+font-size: 24px;
+background: #afd89e;
+border: 3px solid #60944c;
+border-radius: 5px;
+padding: 4px;
+  text-decoration: none;
+  box-shadow: 3px 3px 3px rgba(71, 69, 69, 0.623);
+  transition-duration: 1s;
 }
 
 
