@@ -16,10 +16,10 @@
     margin: 0 auto;
     text-align: center;
     width:430px;
-    height:780px;
+    height:785px;
 }
 
-.character-item {
+.character {
     display: flex;
     flex-direction: row;
     flex-wrap:wrap;
