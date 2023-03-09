@@ -44,7 +44,7 @@ async function getData(character) {
         "beforeend",
         `<div class="character-card">
               <img class="character-img" src= ${actual} alt="Character Icon">               
-                    <h3 class="character-name">${data.name}</h3>
+                    <h2 class="character-name">${data.name}</h2>
                     <p class="character-vision">${data.vision}</p>
                     <p class="character-weapon">Weapon: ${data.weapon}</p>
                     <p class="character-nation">Nation: ${data.nation}</p>
@@ -81,11 +81,11 @@ const query = async function () {
         DOMSelectors.character.insertAdjacentHTML(
           "beforeend",
           `<div class="character-card">
-              <img class="character-img" src= ${actual} alt="Character Icon">               
-                    <h3 class="character-name">${ppl.name}</h3>
-                    <p class="character-vision">${ppl.vision}</p>
-                    <p class="character-weapon">Weapon: ${ppl.weapon}</p>
-                    <p class="character-nation">Nation: ${ppl.nation}</p>
+              <img class="character-img" src= ${actual} alt="Character Icon of ${ppl.name}">               
+                    <h2 class="character-name">${ppl.name}</h2>
+                    <ul class="character-vision">${ppl.vision}</ul>
+                    <ul class="character-weapon">Weapon: ${ppl.weapon}</ul>
+                    <ul class="character-nation">Nation: ${ppl.nation}</ul>
                 </div>`
         );
       });
